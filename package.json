@@ -1,0 +1,13 @@
+{
+  "name": "gon-link",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create gon-link",
+    "db:init": "wrangler d1 execute gon-link --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
